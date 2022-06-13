@@ -1,0 +1,2 @@
+• Node install location - C:\Program Files\nodejs
+• npm global packages - C:\Users\user\AppData\Roaming\npm

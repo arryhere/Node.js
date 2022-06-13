@@ -1,0 +1,30 @@
+
+• npm --version                                                                         // npm version
+
+• npm install -g <package> <package> <...?>                                             // npm install global package
+• npm install <package> <package> <...?>                                                // npm install local package
+• 
+
+• npm list -g --depth=0                                                                 // see all global packages(display only main packages not its sub-packages)
+• npm list -g                                                                           // see all global packages
+• npm list --depth=0                                                                    // see all local packages(display only main packages not its sub-packages)
+• npm list                                                                              // see all local packages
+
+• npm view <module_name> versions                                                       // all available (remote) versions
+• npm view <module_name> version                                                        // latest remote version
+
+• npm outdated -g --depth=0                                                             // find out which packages need to be updated
+• npm update -g <package>                                                               // update global package
+• npm update -g                                                                         // update all global packages
+• npm update                                                                            // update all local dependencies
+• npm update <package>                                                                  // update a single package
+• npm update --save                                                                     // update package.json version numbers
+
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
