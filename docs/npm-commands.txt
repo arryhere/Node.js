@@ -3,7 +3,8 @@
 
 • npm install -g <package> <package> <...?>                                             // npm install global package
 • npm install <package> <package> <...?>                                                // npm install local package
-• 
+• npm install                                                                           // install packages added in dependencies
+• npm install --save-dev <package>                                                      // install as dev dependencies
 
 • npm list -g --depth=0                                                                 // see all global packages(display only main packages not its sub-packages)
 • npm list -g                                                                           // see all global packages
@@ -20,9 +21,11 @@
 • npm update <package>                                                                  // update a single package
 • npm update --save                                                                     // update package.json version numbers
 
-• 
-• 
-• 
+• npm uninstall <module_name>                                                           // uninstall local module
+• npm uninstall -g <module_name>                                                        // uninstall global module
+• npm uninstall <module_name> --save                                                    // uninstall and update package.json
+• npm uninstall -g <module_name> --save                                                 // uninstall and update package.json
+
 • 
 • 
 • 
