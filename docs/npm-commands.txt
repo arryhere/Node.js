@@ -1,6 +1,8 @@
 
 • npm --version                                                                         // npm version
 
+• npm init                                                                              // initialize and scaffold the project
+
 • npm install -g <package> <package> <...?>                                             // npm install global package
 • npm install <package> <package> <...?>                                                // npm install local package
 • npm install                                                                           // install packages added in dependencies

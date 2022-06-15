@@ -22,5 +22,5 @@
     "devDependencies": {
         "nodemon": "^2.0.16"
     },
-    "type": "module"
+    "_<comment>_type": "module"
 }
