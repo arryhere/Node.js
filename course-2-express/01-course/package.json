@@ -1,5 +1,5 @@
 {
-  "name": "course-4-express",
+  "name": "course-2-express",
   "version": "1.0.0",
   "description": "express course",
   "main": "index.js",
@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "@arryhere",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
