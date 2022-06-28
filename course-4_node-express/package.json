@@ -1,0 +1,18 @@
+{
+  "name": "course-4_node-express",
+  "version": "1.0.0",
+  "description": "node and express course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "hello": "node test/hello.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arryhere"
+  },
+  "keywords": [],
+  "author": "@arryhere",
+  "license": "ISC"
+}

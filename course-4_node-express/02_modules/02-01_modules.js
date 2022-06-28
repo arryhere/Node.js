@@ -1,6 +1,7 @@
 /*
 • CommonJS - every file is a module
 • Modules  - encapsulated code (only share minimum)
+• module, package, dependency - all means the same thing
 • *check 02-02 and 02-03
 */
 
