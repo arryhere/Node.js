@@ -10,6 +10,9 @@ server_1.listen(5000, '127.0.0.1', (port = 5000, hostname = '127.0.0.1') => {
 })
 
 const server_2 = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-type', 'text/plain');
+
     if(req.url === '/'){
         res.end('Home Page')
     }
