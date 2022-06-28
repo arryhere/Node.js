@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: system-ui;
 }
 :root{
     --my_black: rgb(20, 20, 20);
@@ -40,12 +40,15 @@
 .nav-li-a:hover {
     background-color: var(--my_red);
     color: rgb(20, 20, 20);
+    border-top: none;
+    border-bottom: none;
     font-weight: 500;
     transition: background-color 300ms;
 }
 
 .active{
     border-bottom: 5px solid var(--my_red);
+    border-top: 5px solid var(--my_black);
 }
 
 .flex-row-center{

@@ -5,7 +5,7 @@ const server_1 = http.createServer((req, res) => {              // req - incommi
     res.write('Hello World');
     res.end();
 })
-server_1.listen(5000, '127.0.0.1', (port = 5000, hostname = '127.0.0.1') => {
+server_1.listen(port = 5000, hostname = '127.0.0.1', () => {
     console.log(`Server is listening at: http://${hostname}:${port}`);
 })
 
@@ -26,7 +26,7 @@ const server_2 = http.createServer((req, res) => {
         res.end('Error 404: Page does not exist')
     }
 })
-server_2.listen(5001, '127.0.0.1', (port = 5001, hostname = '127.0.0.1') => {
+server_2.listen(port = 5001, hostname = '127.0.0.1', () => {
     console.log(`Server is listening at: http://${hostname}:${port}`);
 })
 
@@ -34,7 +34,7 @@ server_2.listen(5001, '127.0.0.1', (port = 5001, hostname = '127.0.0.1') => {
 
 
 /*
-• imp discussion links
+• Explore -
 
 • https://github.com/nodejs/node/issues/26005       // res.write(data) followed by res.end() is not actually equivalent to res.end(data)
 • 
