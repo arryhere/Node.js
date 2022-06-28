@@ -1,0 +1,2 @@
+Hello this is sync file1 txt
+Hello this is sync file2 txt
