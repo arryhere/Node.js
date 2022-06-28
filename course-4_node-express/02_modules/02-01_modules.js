@@ -4,7 +4,7 @@
 • *check 02-02 and 02-03
 */
 
-const names= require('./02-02_names');
+const names = require('./02-02_names');
 const print_name = require('./02-03_print_name');
 
 console.log(names);

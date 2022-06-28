@@ -29,3 +29,4 @@ fs.readFile(path.join(__dirname, '05-00_file1.txt'), 'utf-8', (err, result) => {
     }
 })
 
+// pls dont do this kind of callback hell :)
