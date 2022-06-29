@@ -23,6 +23,7 @@ const server_2 = http.createServer((req, res) => {
         res.end('Contact Page')
     }
     else {
+        res.statusCode = 404;
         res.end('Error 404: Page does not exist')
     }
 })
