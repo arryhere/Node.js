@@ -14,7 +14,9 @@ for (let i = 1; i <= 10000; i++) {
 }
 
 const data2 = fs.readFileSync(path.join(__dirname, '/10-00_write-1.txt'), 'utf-8');
-console.log(data2);
+fs.stat(path.join(__dirname, '/10-00_write-1.txt'), (err, stats) => {
+    console.log(stats.size);
+})
 
 
 console.log("---------------------------------------------------------------------------------------------------------------------------------");
@@ -34,5 +36,5 @@ setTimeout(() => {
     stream.on('error', (error) => {
         console.log(error.message);
     })
-}, 3000);
+}, 5000);
 

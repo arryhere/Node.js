@@ -7,9 +7,10 @@ const hostname = '127.0.0.1';
 
 const server = http.createServer((req, res) => {
     console.log(req.url);
-    if(req.url === '/style.css'){
+
+    if (req.url.match(/^(.*)(\/styles.css)$/gi)) {
         res.writeHead(200, { "Content-Type": "text/css" });
-        res.write(fs.readFileSync(path.join(__dirname, '/templates/style.css'), 'utf-8'));
+        res.write(fs.readFileSync(path.join(__dirname, '/templates/styles.css'), 'utf-8'));
     }
     else if (req.url === '/') {
         res.writeHead(200, { "Content-Type": "text/html" });
