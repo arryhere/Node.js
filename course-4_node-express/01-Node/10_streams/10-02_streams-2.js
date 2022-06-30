@@ -12,4 +12,4 @@ http.createServer(function (req, res) {
     fileStream.on('error', (err) => {
         res.end(err)
     })
-}).listen(port = 80, hostname = '127.0.0.1', () => { console.log(`Server is listening at: http://${hostname}:${port}`) })
+}).listen(port = 3000, hostname = '127.0.0.1', () => { console.log(`Server is listening at: http://${hostname}:${port}`) })
