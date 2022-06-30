@@ -43,18 +43,23 @@ app.get('/api/v1/query2', (req, res) => {
     const {search, limit} = req.query;
     console.log(search, limit);
 
-    let sortedProduct = {data: "null"};
+    let sortedProduct = data.products;
+    let flag = 0;
+    let err = {data: "null"}
 
     if(String(search).match(/^([a-zA-Z])$/gi)){
-        sortedProduct = data.products.filter((e,i,arr) => {
+        flag++;
+        sortedProduct = sortedProduct.filter((e,i,arr) => {
             return e.name.startsWith(search.toLowerCase())
         })
     }
-    else if(String(limit).match(/^([1-9]+)$/gi)){
-        sortedProduct = data.products.slice(0, parseInt(limit))
+    if(String(limit).match(/^([1-9]+)$/gi)){
+        flag++;
+        sortedProduct = sortedProduct.slice(0, parseInt(limit))
     }
     
-    sortedProduct.data !== "null" ? res.status(200).json(sortedProduct) : res.status(404).json(sortedProduct)
+    sortedProduct.length < 1 || flag === 0 ? res.status(404).json(err) : res.status(200).json(sortedProduct)
+    flag = 0;
 })
 
 app.listen(port = 3000, hostname = '127.0.0.1', () => { console.log(`Server is lintening at: http://${hostname}:${port}`); })
