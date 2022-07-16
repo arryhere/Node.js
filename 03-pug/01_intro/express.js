@@ -3,6 +3,12 @@ const path = require('path')
 
 const app = express()
 
+// logging url requested
+app.use((req, res, next) => {
+    console.log(req.url);
+    next();
+})
+
 // To create a virtual path prefix (where the path does not actually exist in the file system) 
 // for files that are served by the express.static function, 
 // specify a mount path for the static directory,
