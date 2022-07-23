@@ -14,5 +14,6 @@
   },
   "keywords": [],
   "author": "@arryhere",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "commonjs"
 }
