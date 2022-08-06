@@ -22,7 +22,7 @@ app.set('views', path.join(__dirname, '/views'))
 
 //end points
 app.get('/form', (req, res) => {
-    res.status(200).render('index.pug', { title: 'Gym Membership' })
+    res.status(200).render('form.pug', { title: 'Gym Membership' })
 })
 
 app.get('*', (req, res) => {
